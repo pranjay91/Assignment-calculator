@@ -4,18 +4,18 @@ import {useState} from "react";
 
 const App =()=> {
 
-  const [input, setInput] = useState("");
-   const clickHandler = (event) =>{
+const [input, setInput] = useState("");
+const clickHandler = (event) =>{
      setInput(input.concat(event.target.value))
    }
-   const clearHandler = ()=>{
+const clearHandler = ()=>{
     setInput("");
    }
-   const resultHandler = () =>{
+const resultHandler = () =>{
     setInput(eval(input).toString());
    }
 
-  return (
+return (
     <>
     <div class="container">
         <h1 class="head">Calculator</h1>
